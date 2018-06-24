@@ -33,36 +33,49 @@
             android:text="Tracklist" />
     </LinearLayout>
 
-    <TextView
-        style="@style/TextViewArtist"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/spacingMedium"
-        android:layout_marginRight="@dimen/spacingMedium"
-        android:layout_marginTop="@dimen/spacingBig"
-        android:text="Bliss n Eso" />
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/spacingMedium"
-        android:layout_marginRight="@dimen/spacingMedium"
-        android:adjustViewBounds="true"
-        android:src="@drawable/image_album" />
+        <TextView
+            android:id="@+id/text_view_artist"
+            style="@style/TextViewArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/image_view_album_cover"
+            android:layout_marginLeft="@dimen/spacingMedium"
+            android:layout_marginRight="@dimen/spacingMedium"
+            android:text="Bliss n Eso" />
 
-    <TextView
-        style="@style/TextViewAlbum"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/spacingMedium"
-        android:layout_marginRight="@dimen/spacingMedium"
-        android:text="Off the grid" />
+        <ImageView
+            android:id="@+id/image_view_album_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/spacingMedium"
+            android:layout_marginRight="@dimen/spacingMedium"
+            android:adjustViewBounds="true"
+            android:src="@drawable/image_album" />
 
-    <TextView
-        style="@style/TextViewYear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/spacingMedium"
-        android:layout_marginRight="@dimen/spacingMedium"
-        android:text="2017" />
+        <TextView
+            android:id="@+id/text_view_album_name"
+            style="@style/TextViewAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view_album_cover"
+            android:layout_marginLeft="@dimen/spacingMedium"
+            android:layout_marginRight="@dimen/spacingMedium"
+            android:text="Off the grid" />
+
+        <TextView
+            android:id="@+id/text_view_year"
+            style="@style/TextViewYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_album_name"
+            android:layout_marginLeft="@dimen/spacingMedium"
+            android:layout_marginRight="@dimen/spacingMedium"
+            android:text="2017" />
+    </RelativeLayout>
 </LinearLayout>

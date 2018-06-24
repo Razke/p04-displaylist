@@ -16,7 +16,7 @@ For this project, **the actual music playing functionality won't be implemented.
 
 *
 
-* Android Studio Plugins: CodeGlance, Key promoter, Markdown Navigator, Material Theme UI, WIFI ADB ULTIMATE, .ignore
+* Android Studio Plugins: CodeGlance, Key promoter, Markdown Navigator, Material Theme UI, WIFI ADB ULTIMATE, .ignore, Presentation Assistant, Android Drawable Importer
 
 ## Reflections
 
