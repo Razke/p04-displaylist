@@ -23,3 +23,5 @@ output.json
 # generated files
 bin/
 gen/
+.idea/vcs.xml
+app/libs/
