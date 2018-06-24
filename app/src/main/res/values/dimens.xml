@@ -6,6 +6,7 @@
     <dimen name="textSizeLarge">20sp</dimen>
     <dimen name="textSizeMedium">16sp</dimen>
 
+
     <!-- Typical spacing between two views. -->
     <dimen name="spacingBig">32dp</dimen>
     <dimen name="spacingMedium">16dp</dimen>
