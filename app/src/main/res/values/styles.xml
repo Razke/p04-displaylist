@@ -1,8 +1,7 @@
 <resources>
-
-    <!-- Base application theme. -->
+    <!-- Base application theme -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+        <!-- Customize your theme here -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -10,10 +9,13 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <!-- Theme of the navigation Buttons -->
     <style name="ButtonNavigationTheme">
         <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 
+    <!-- Album themes -->
     <style name="TextViewArtist">
         <item name="android:textSize">@dimen/textSizeHuge</item>
         <item name="android:textColor">@color/nero</item>
@@ -29,4 +31,22 @@
         <item name="android:textColor">@color/nero</item>
     </style>
 
+    <!-- list_item.xml themes -->
+    <style name="ListTextViewSong">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/nero</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+    </style>
+
+    <style name="ListTextViewArtist">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+    </style>
+
+    <style name="ListTextViewSongLength">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+    </style>
 </resources>

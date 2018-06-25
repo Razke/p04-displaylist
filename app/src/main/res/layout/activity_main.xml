@@ -6,17 +6,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
     <Button
-        android:id="@+id/button_artist"
+        android:id="@+id/button_tracklist"
         style="@style/ButtonNavigationTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_tracklist_32"
         android:drawablePadding="@dimen/spacingMedium"
-        android:text="Tracklist"
-        android:textAlignment="viewStart" />
-
+        android:text="@string/button_tracklist" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -30,7 +27,7 @@
             android:layout_above="@+id/image_view_album_cover"
             android:layout_marginLeft="@dimen/spacingMedium"
             android:layout_marginRight="@dimen/spacingMedium"
-            android:text="Bliss n Eso" />
+            android:text="@string/text_view_artist" />
 
         <ImageView
             android:id="@+id/image_view_album_cover"
@@ -51,7 +48,7 @@
             android:layout_below="@+id/image_view_album_cover"
             android:layout_marginLeft="@dimen/spacingMedium"
             android:layout_marginRight="@dimen/spacingMedium"
-            android:text="Off the grid" />
+            android:text="@string/text_view_album_name" />
 
         <TextView
             android:id="@+id/text_view_year"
@@ -61,6 +58,6 @@
             android:layout_below="@+id/text_view_album_name"
             android:layout_marginLeft="@dimen/spacingMedium"
             android:layout_marginRight="@dimen/spacingMedium"
-            android:text="2017" />
+            android:text="@string/text_view_year" />
     </RelativeLayout>
 </LinearLayout>

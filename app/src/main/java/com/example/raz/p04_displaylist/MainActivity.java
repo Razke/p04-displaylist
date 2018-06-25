@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the trackList button
-        Button trackList = findViewById(R.id.button_artist);
+        Button trackList = findViewById(R.id.button_tracklist);
 
         // Set a click listener on that View
         trackList.setOnClickListener(new OnClickListener() {

@@ -11,14 +11,13 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_album_32"
         android:drawablePadding="@dimen/spacingMedium"
-        android:text="Album"
-        android:textAlignment="viewStart" />
+        android:text="@string/button_back_album" />
 
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp"
+        android:padding="@dimen/spacingMedium"
         android:scrollbars="none" />
 </LinearLayout>

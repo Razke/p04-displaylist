@@ -1,3 +1,21 @@
 <resources>
+    <!-- Name of the app -->
     <string name="app_name">My Album</string>
+
+    <!-- Strings for the navigation buttons -->
+    <string name="button_back_album">Back to Album</string>
+    <string name="button_tracklist">Go to Tracklist</string>
+
+    <!-- Strings for activity_main.xml -->
+    <string name="text_view_artist">Bliss n Eso</string>
+    <string name="text_view_album_name">Off the grid</string>
+    <string name="text_view_year">2017</string>
+
+    <!-- Strings for list_item.xml -->
+    <string name="text_view_placeholder_length">5:05</string>
+    <string name="text_view_placeholder_artist">Artist</string>
+    <string name="text_view_placeholder_song">Song</string>
+
+    <!-- ArrayList strings -->
+    <string name="array_list_artist_name">Bliss N Eso</string>
 </resources>

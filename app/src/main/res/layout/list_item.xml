@@ -7,34 +7,28 @@
 
     <TextView
         android:id="@+id/text_view_list_song"
+        style="@style/ListTextViewSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:ellipsize="end"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:textColor="@color/nero"
-        android:textSize="16sp"
-        tools:text="Song" />
+        tools:text="@string/text_view_placeholder_song" />
 
     <TextView
         android:id="@+id/text_view_list_artist"
+        style="@style/ListTextViewArtist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_list_song"
-        android:textColor="@color/grey"
-        android:textSize="12sp"
-        tools:text="Artist" />
+        tools:text="@string/text_view_placeholder_artist" />
 
     <TextView
         android:id="@+id/text_view_list_song_length"
+        style="@style/ListTextViewSongLength"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/text_view_list_song"
         android:layout_toLeftOf="@+id/text_view_list_artist"
-        android:textColor="@color/grey"
-        android:textSize="16sp"
-        tools:text="5:05" />
+        tools:text="@string/text_view_placeholder_length" />
 </RelativeLayout>

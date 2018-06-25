@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#03A9F4</color>
+    <!-- App theme -->
+    <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#9E9E9E</color>
+
+    <!-- Basic colors -->
     <color name="white">#FFFFFF</color>
     <color name="nero">#212121</color>
     <color name="grey">#757575</color>

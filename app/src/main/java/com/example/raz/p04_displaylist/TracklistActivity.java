@@ -21,21 +21,21 @@ public class TracklistActivity extends AppCompatActivity {
 
         // Create a list of songs
         ArrayList<Song> songs = new ArrayList<>();
-        songs.add(new Song("Bliss N Eso", "Off the Grid", "5:05"));
-        songs.add(new Song("Bliss N Eso", "Believe (featuring Mario)", "3:43"));
-        songs.add(new Song("Bliss N Eso", "Tear the Roof Off (featuring Watsky)", "3:25"));
-        songs.add(new Song("Bliss N Eso", "Coolin' (featuring Dizzy Wright and Rob Curly)", "5:27"));
-        songs.add(new Song("Bliss N Eso", "Dopamine (featuring Thief)", "3:31"));
-        songs.add(new Song("Bliss N Eso", "Devil on My Shoulder", "4:40"));
-        songs.add(new Song("Bliss N Eso", "Birds in the Sky", "3:40"));
-        songs.add(new Song("Bliss N Eso", "Friend Like You (Lee Fields)", "3:55"));
-        songs.add(new Song("Bliss N Eso", "Blue", "4:01"));
-        songs.add(new Song("Bliss N Eso", "Great Escape", "4:00"));
-        songs.add(new Song("Bliss N Eso", "Whatever Happened to the DJ", "3:40"));
-        songs.add(new Song("Bliss N Eso", "Moments (featuring Gavin James)", "3:56"));
-        songs.add(new Song("Bliss N Eso", "Travelling Band", "1:25"));
-        songs.add(new Song("Bliss N Eso", "1-800 Love Line (skit)", "3:53"));
-        songs.add(new Song("Bliss N Eso", "Soul Glo (featuring Lee Fields and Tabi Gazele)", "4:16"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Off the Grid", "5:05"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Believe (featuring Mario)", "3:43"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Tear the Roof Off (featuring Watsky)", "3:25"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Coolin' (featuring Dizzy Wright and Rob Curly)", "5:27"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Dopamine (featuring Thief)", "3:31"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Devil on My Shoulder", "4:40"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Birds in the Sky", "3:40"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Friend Like You (Lee Fields)", "3:55"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Blue", "4:01"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Great Escape", "4:00"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Whatever Happened to the DJ", "3:40"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Moments (featuring Gavin James)", "3:56"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Travelling Band", "1:25"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "1-800 Love Line (skit)", "3:53"));
+        songs.add(new Song(getString(R.string.array_list_artist_name), "Soul Glo (featuring Lee Fields and Tabi Gazele)", "4:16"));
 
         // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
         // adapter knows how to create list items for each item in the list.
