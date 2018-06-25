@@ -17,6 +17,8 @@ Album Activity|Tracklist Activity
 
 ## Resources used in this project
 
+* [CustomAdapter Example](https://github.com/udacity/ud839_CustomAdapter_Example)
+
 * [How to disable landscape orientation](https://stackoverflow.com/questions/6745797/how-to-set-entire-application-in-portrait-mode-only/9784269#9784269) - NOTE: I used SCREEN_ORIENTATION_NOSENSOR
 
 * [How to disable the action bar](https://stackoverflow.com/questions/8456835/how-to-disable-action-bar-permanently/44754842#44754842)
