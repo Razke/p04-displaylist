@@ -23,7 +23,6 @@ public class TracklistActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // Disable portrait orientation
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
-
         // Set the content of the activity to use the song_list.xml layout file
         setContentView(R.layout.song_list);
 
@@ -48,19 +47,16 @@ public class TracklistActivity extends AppCompatActivity {
         // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
         // adapter knows how to create list items for each item in the list.
         SongAdapter adapter = new SongAdapter(this, songs);
-
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // song_list layout file.
         ListView listView = findViewById(R.id.list);
-
         // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Song} in the list.
         listView.setAdapter(adapter);
-
         // Set a click listener on ListView
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
+            // The code in this method will be executed when an item from the list is clicked on
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(TracklistActivity.this, PlayActivity.class);
@@ -72,7 +68,6 @@ public class TracklistActivity extends AppCompatActivity {
 
         // Find the View that shows the album button
         Button album = findViewById(R.id.button_album);
-
         // Set a click listener on that View
         album.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the album button is clicked on
@@ -87,7 +82,6 @@ public class TracklistActivity extends AppCompatActivity {
 
         // Find the View that shows the play button
         Button play = findViewById(R.id.button_play);
-
         // Set a click listener on that View
         play.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the play button is clicked on

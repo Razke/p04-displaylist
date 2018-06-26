@@ -17,7 +17,6 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // Disable portrait orientation
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
-
         // Set the content of the activity to use the activity_play.xml layout file
         setContentView(R.layout.activity_play);
 
@@ -28,25 +27,20 @@ public class PlayActivity extends AppCompatActivity {
 
         // Create a TextView variable
         TextView song;
-
         // Find the view that displays the song name in list_item.xml
         song = findViewById(R.id.text_view_play_song);
-
         // Set the song name from the ArrayList on that View
         song.setText(click.getStringExtra(TracklistActivity.EXTRA_SONG_NAME));
 
         // Create a TextView variable
         TextView artist;
-
         // Find the view that displays the artist name list_item.xml
         artist = findViewById(R.id.text_view_play_artist);
-
         // Set the artist name from the ArrayList on that View
         artist.setText(click.getStringExtra(TracklistActivity.EXTRA_ARTIST_NAME));
 
         // Find the View that shows the play icon
         final ImageView PLAY_ICON = findViewById(R.id.image_view_play_button);
-
         // Set a click listener on that View
         PLAY_ICON.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the play icon is clicked on
@@ -58,7 +52,6 @@ public class PlayActivity extends AppCompatActivity {
 
         // Find the View that shows the album button
         Button album = findViewById(R.id.button_album);
-
         // Set a click listener on that View
         album.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the album button is clicked on
@@ -73,7 +66,6 @@ public class PlayActivity extends AppCompatActivity {
 
         // Find the View that shows the trackList button
         Button trackList = findViewById(R.id.button_tracklist);
-
         // Set a click listener on that View
         trackList.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the trackList button is clicked on

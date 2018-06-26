@@ -17,13 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // Disable portrait orientation
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
-
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the trackList button
         Button trackList = findViewById(R.id.button_tracklist);
-
         // Set a click listener on that View
         trackList.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the trackList button is clicked on
@@ -38,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Find the View that shows the play button
         Button play = findViewById(R.id.button_play);
-
         // Set a click listener on that View
         play.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the play button is clicked on
