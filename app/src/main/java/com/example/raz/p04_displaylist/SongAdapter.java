@@ -47,6 +47,8 @@ public class SongAdapter extends ArrayAdapter<Song> {
         // set this text on the number TextView
         theLengthOfSong.setText(currentSong.getSongLength());
 
+        // Return the whole list item layout (containing 3 TextViews)
+        // so that it can be shown in the ListView
         return listItemView;
     }
 }

@@ -15,8 +15,6 @@ public class PlayActivity extends AppCompatActivity {
     TextView song;
     TextView artist;
 
-    // String artistName = getString(R.string.array_list_artist_name);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,14 +24,21 @@ public class PlayActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_play.xml layout file
         setContentView(R.layout.activity_play);
 
+        // Get intent for items in the ArrayList
         Intent click = getIntent();
         if (click == null)
             return;
 
+        // Find the view that displays the song name in list_item.xml
         song = findViewById(R.id.text_view_play_song);
+
+        // Set the song name from the ArrayList on that View
         song.setText(click.getStringExtra(TracklistActivity.EXTRA_SONG_NAME));
 
+        // Find the view that displays the artist name list_item.xml
         artist = findViewById(R.id.text_view_play_artist);
+
+        // Set the artist name from the ArrayList on that View
         artist.setText(click.getStringExtra(TracklistActivity.EXTRA_ARTIST_NAME));
 
         // Find the View that shows the play button
