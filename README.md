@@ -12,7 +12,7 @@ For this project, **the actual music playing functionality won't be implemented.
 
 Album Activity|Tracklist Activity|Now Playing Activity
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://i.imgur.com/9clQvhP.jpg" width="325" height="600">  |  <img src="https://i.imgur.com/9clQvhP.jpg" width="325" height="600">  |  <img src="https://i.imgur.com/9clQvhP.jpg" width="325" height="600">
+<img src="https://i.imgur.com/MbKzkRx.jpg" width="325" height="600">  |  <img src="https://i.imgur.com/4WF1Dpv.jpg" width="325" height="600">  |  <img src="https://i.imgur.com/Rl6539B.jpg" width="325" height="600">
 
 
 
