@@ -12,9 +12,6 @@ import android.widget.TextView;
 
 public class PlayActivity extends AppCompatActivity {
 
-    TextView song;
-    TextView artist;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,11 +26,17 @@ public class PlayActivity extends AppCompatActivity {
         if (click == null)
             return;
 
+        // Create a TextView variable
+        TextView song;
+
         // Find the view that displays the song name in list_item.xml
         song = findViewById(R.id.text_view_play_song);
 
         // Set the song name from the ArrayList on that View
         song.setText(click.getStringExtra(TracklistActivity.EXTRA_SONG_NAME));
+
+        // Create a TextView variable
+        TextView artist;
 
         // Find the view that displays the artist name list_item.xml
         artist = findViewById(R.id.text_view_play_artist);
@@ -41,15 +44,15 @@ public class PlayActivity extends AppCompatActivity {
         // Set the artist name from the ArrayList on that View
         artist.setText(click.getStringExtra(TracklistActivity.EXTRA_ARTIST_NAME));
 
-        // Find the View that shows the play button
-        final ImageView PLAY_BUTTON = findViewById(R.id.image_view_play_button);
+        // Find the View that shows the play icon
+        final ImageView PLAY_ICON = findViewById(R.id.image_view_play_button);
 
         // Set a click listener on that View
-        PLAY_BUTTON.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the play button is clicked on
+        PLAY_ICON.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the play icon is clicked on
             @Override
             public void onClick(View v) {
-                PLAY_BUTTON.setImageResource(R.drawable.ic_pause_black_48dp);
+                PLAY_ICON.setImageResource(R.drawable.ic_pause_black_48dp);
             }
         });
 

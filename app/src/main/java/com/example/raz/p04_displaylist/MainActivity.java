@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the album cover
+        // Find the View that shows the play button
         Button play = findViewById(R.id.button_play);
 
         // Set a click listener on that View
         play.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the album cover is clicked on
+            // The code in this method will be executed when the play button is clicked on
             @Override
             public void onClick(View v) {
                 Activity currentActivity = (Activity) v.getContext();
