@@ -42,14 +42,14 @@ public class PlayActivity extends AppCompatActivity {
         artist.setText(click.getStringExtra(TracklistActivity.EXTRA_ARTIST_NAME));
 
         // Find the View that shows the play button
-        final ImageView playButton = findViewById(R.id.image_view_play_button);
+        final ImageView PLAY_BUTTON = findViewById(R.id.image_view_play_button);
 
         // Set a click listener on that View
-        playButton.setOnClickListener(new View.OnClickListener() {
+        PLAY_BUTTON.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the play button is clicked on
             @Override
             public void onClick(View v) {
-                playButton.setImageResource(R.drawable.ic_pause_black_48dp);
+                PLAY_BUTTON.setImageResource(R.drawable.ic_pause_black_48dp);
             }
         });
 
