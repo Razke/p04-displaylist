@@ -39,7 +39,7 @@ Album Activity|Tracklist Activity|Now Playing Activity
 
 * [Mentor review #1](https://review.udacity.com/#!/reviews/1303073/shared)
 
-* [Mentor review #2]()
+* [Mentor review #2](https://review.udacity.com/#!/reviews/1305726/shared)
 
 * [Bliss n Eso Album](https://en.wikipedia.org/wiki/Off_the_Grid_(Bliss_n_Eso_album)#Track_listing)
 

@@ -9,7 +9,6 @@
     <dimen name="textSizeSmall">12sp</dimen>
 
     <!-- Typical spacing between two views -->
-
     <dimen name="spacingSuper">150dp</dimen>
     <dimen name="spacingImmense">90dp</dimen>
     <dimen name="spacingGiant">55dp</dimen>
