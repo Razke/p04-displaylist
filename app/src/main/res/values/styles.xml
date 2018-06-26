@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -17,18 +17,23 @@
 
     <!-- Album themes -->
     <style name="TextViewArtist">
-        <item name="android:textSize">@dimen/textSizeHuge</item>
         <item name="android:textColor">@color/nero</item>
+        <item name="android:textSize">@dimen/textSizeHuge</item>
     </style>
 
     <style name="TextViewAlbum">
-        <item name="android:textSize">@dimen/textSizeBig</item>
         <item name="android:textColor">@color/nero</item>
+        <item name="android:textSize">@dimen/textSizeBig</item>
     </style>
 
     <style name="TextViewYear">
-        <item name="android:textSize">@dimen/textSizeLarge</item>
         <item name="android:textColor">@color/nero</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+    </style>
+
+    <style name="TextViewDescription">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/textSizeNormal</item>
     </style>
 
     <!-- list_item.xml themes -->

@@ -4,20 +4,45 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button_album"
-        style="@style/ButtonNavigationTheme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_album_32"
-        android:drawablePadding="@dimen/spacingMedium"
-        android:text="@string/button_back_album" />
-
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="10"
         android:padding="@dimen/spacingMedium"
         android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_album"
+            style="@style/ButtonNavigationTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spacingGiant"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_album_32"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button_tracklist"
+            style="@style/ButtonNavigationTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spacingGiant"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_tracklist_32"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button_play"
+            style="@style/ButtonNavigationTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spacingGiant"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_play_32"
+            android:textAlignment="center" />
+    </LinearLayout>
 </LinearLayout>

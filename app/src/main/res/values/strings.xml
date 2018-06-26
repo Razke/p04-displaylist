@@ -1,6 +1,6 @@
 <resources>
     <!-- Name of the app -->
-    <string name="app_name">My Album</string>
+    <string name="app_name">Album</string>
 
     <!-- Strings for the navigation buttons -->
     <string name="button_back_album">Back to Album</string>
@@ -10,6 +10,7 @@
     <string name="text_view_artist">Bliss n Eso</string>
     <string name="text_view_album_name">Off the grid</string>
     <string name="text_view_year">2017</string>
+    <string name="text_view_description">Off the Grid is the sixth studio album by the Australian hip hop trio Bliss n Eso, following 2013\'s Circus in the Sky. It was released on 28 April 2017 through Illusive Sounds. It debuted at number one on the ARIA Albums Chart.</string>
 
     <!-- Strings for list_item.xml -->
     <string name="text_view_placeholder_length">5:05</string>
@@ -18,4 +19,7 @@
 
     <!-- ArrayList strings -->
     <string name="array_list_artist_name">Bliss N Eso</string>
+
+    <!-- Activities strings -->
+    <string name="activity_play_error">Select a song from the Tracklist first!</string>
 </resources>

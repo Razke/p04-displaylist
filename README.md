@@ -10,9 +10,11 @@ Data about each song should be stored in a custom class that is retrieved and di
 
 For this project, **the actual music playing functionality won't be implemented.**
 
-Album Activity|Tracklist Activity
-:-------------------------:|:-------------------------:
-<img src="https://i.imgur.com/9clQvhP.jpg" width="325" height="600">  |  <img src="https://i.imgur.com/MiRrdJI.jpg" width="325" height="600">
+Album Activity|Tracklist Activity|Now Playing Activity
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://i.imgur.com/9clQvhP.jpg" width="325" height="600">  |  <img src="https://i.imgur.com/9clQvhP.jpg" width="325" height="600">  |  <img src="https://i.imgur.com/9clQvhP.jpg" width="325" height="600">
+
+
 
 
 ## Resources used in this project
@@ -21,11 +23,13 @@ Album Activity|Tracklist Activity
 
 * [How to disable landscape orientation](https://stackoverflow.com/questions/6745797/how-to-set-entire-application-in-portrait-mode-only/9784269#9784269) - NOTE: I used SCREEN_ORIENTATION_NOSENSOR
 
-* [How to disable the action bar](https://stackoverflow.com/questions/8456835/how-to-disable-action-bar-permanently/44754842#44754842)
-
 * [Activity Switch Direction](https://stackoverflow.com/questions/5105126/android-activity-switch-direction/9747708#9747708)
 
-* [Displaying images in a table for README.md](https://stackoverflow.com/a/24320279/8651044)
+* [XML Animations](https://stackoverflow.com/a/20188089/8651044)
+
+* [Other XML Animations](https://www.androidhive.info/2013/06/android-working-with-xml-animations/)
+
+* [Lists - Material Design](https://material.io/design/components/lists.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics#)
 
 * [Image Asset Studio](https://developer.android.com/studio/write/image-asset-studio)
 
@@ -33,14 +37,20 @@ Album Activity|Tracklist Activity
 
 * [InVision for drawing my prototype](https://www.invisionapp.com/)
 
-* [Mentor review]()
+* [Mentor review #1](https://review.udacity.com/#!/reviews/1303073/shared)
+
+* [Mentor review #2]()
 
 * [Bliss n Eso Album](https://en.wikipedia.org/wiki/Off_the_Grid_(Bliss_n_Eso_album)#Track_listing)
+
+* [Displaying images in a table for README.md](https://stackoverflow.com/a/24320279/8651044)
 
 * Android Studio Plugins: CodeGlance, Key promoter, Markdown Navigator, Material Theme UI, WIFI ADB ULTIMATE, .ignore, Presentation Assistant, Android Drawable Importer
 
 ## Reflections
 
 * Got a thin grasp about using Arrays, Adapters and ListViews together.
+
+* Rubric guidelines seem to elude me sometimes.
 
 [Back to Top](#table-of-contents)

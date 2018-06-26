@@ -19,6 +19,9 @@
         <activity
             android:name=".TracklistActivity"
             android:label="Tracklist" />
+        <activity
+            android:name=".PlayActivity"
+            android:label="Now Playing" />
     </application>
 
 </manifest>

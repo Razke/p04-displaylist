@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,27 +31,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Activity currentActivity = (Activity) v.getContext();
                 Intent i = new Intent(currentActivity, TracklistActivity.class);
-                i.putExtra("anim id in", R.anim.up_in);
-                i.putExtra("anim id out", R.anim.up_out);
                 currentActivity.startActivity(i);
-                overridePendingTransition(R.anim.down_in, R.anim.down_out);
+                overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
             }
         });
 
         // Find the View that shows the album cover
-        ImageView album = findViewById(R.id.image_view_album_cover);
+        Button play = findViewById(R.id.button_play);
 
         // Set a click listener on that View
-        album.setOnClickListener(new OnClickListener() {
+        play.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the album cover is clicked on
             @Override
             public void onClick(View v) {
                 Activity currentActivity = (Activity) v.getContext();
-                Intent i = new Intent(currentActivity, TracklistActivity.class);
-                i.putExtra("anim id in", R.anim.up_in);
-                i.putExtra("anim id out", R.anim.up_out);
+                Intent i = new Intent(currentActivity, PlayActivity.class);
                 currentActivity.startActivity(i);
-                overridePendingTransition(R.anim.down_in, R.anim.down_out);
+                overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
+                Toast.makeText(getApplicationContext(), R.string.activity_play_error, Toast.LENGTH_LONG).show();
             }
         });
     }

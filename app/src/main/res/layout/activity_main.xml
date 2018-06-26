@@ -6,58 +6,97 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button_tracklist"
-        style="@style/ButtonNavigationTheme"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_artist"
+                style="@style/TextViewArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacingMedium"
+                android:layout_marginRight="@dimen/spacingMedium"
+                android:text="@string/text_view_artist" />
+
+            <ImageView
+                android:id="@+id/image_view_album_cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacingMedium"
+                android:layout_marginRight="@dimen/spacingMedium"
+                android:adjustViewBounds="true"
+                android:src="@drawable/image_album" />
+
+            <TextView
+                android:id="@+id/text_view_album_name"
+                style="@style/TextViewAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacingMedium"
+                android:layout_marginRight="@dimen/spacingMedium"
+                android:text="@string/text_view_album_name" />
+
+            <TextView
+                android:id="@+id/text_view_year"
+                style="@style/TextViewYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacingMedium"
+                android:layout_marginRight="@dimen/spacingMedium"
+                android:layout_weight="0"
+                android:text="@string/text_view_year" />
+
+            <TextView
+                android:id="@+id/text_view_description"
+                style="@style/TextViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacingMedium"
+                android:layout_marginRight="@dimen/spacingMedium"
+                android:layout_marginTop="@dimen/spacingMedium"
+                android:layout_weight="0"
+                android:text="@string/text_view_description" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_tracklist_32"
-        android:drawablePadding="@dimen/spacingMedium"
-        android:text="@string/button_tracklist" />
+        android:layout_weight="0"
+        android:orientation="horizontal">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/text_view_artist"
-            style="@style/TextViewArtist"
+        <Button
+            android:id="@+id/button_album"
+            style="@style/ButtonNavigationTheme"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/image_view_album_cover"
-            android:layout_marginLeft="@dimen/spacingMedium"
-            android:layout_marginRight="@dimen/spacingMedium"
-            android:text="@string/text_view_artist" />
+            android:layout_height="@dimen/spacingGiant"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_album_32" />
 
-        <ImageView
-            android:id="@+id/image_view_album_cover"
+        <Button
+            android:id="@+id/button_tracklist"
+            style="@style/ButtonNavigationTheme"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="@dimen/spacingMedium"
-            android:layout_marginRight="@dimen/spacingMedium"
-            android:adjustViewBounds="true"
-            android:src="@drawable/image_album" />
+            android:layout_height="@dimen/spacingGiant"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_tracklist_32" />
 
-        <TextView
-            android:id="@+id/text_view_album_name"
-            style="@style/TextViewAlbum"
+        <Button
+            android:id="@+id/button_play"
+            style="@style/ButtonNavigationTheme"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/image_view_album_cover"
-            android:layout_marginLeft="@dimen/spacingMedium"
-            android:layout_marginRight="@dimen/spacingMedium"
-            android:text="@string/text_view_album_name" />
-
-        <TextView
-            android:id="@+id/text_view_year"
-            style="@style/TextViewYear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/text_view_album_name"
-            android:layout_marginLeft="@dimen/spacingMedium"
-            android:layout_marginRight="@dimen/spacingMedium"
-            android:text="@string/text_view_year" />
-    </RelativeLayout>
+            android:layout_height="@dimen/spacingGiant"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_play_32" />
+    </LinearLayout>
 </LinearLayout>
+
+
+
