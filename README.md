@@ -14,8 +14,14 @@ Album Activity|Tracklist Activity|Now Playing Activity
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://i.imgur.com/MbKzkRx.jpg" width="325" height="600">  |  <img src="https://i.imgur.com/4WF1Dpv.jpg" width="325" height="600">  |  <img src="https://i.imgur.com/Rl6539B.jpg" width="325" height="600">
 
-
-
+This project is about combining various ideas and skills we’ve been practicing throughout the course. They include:
+* Designing an app experience to achieve a certain goal
+* Creating new activities
+* Using explicit Intents to link between activities in your app
+* Using OnClickListeners to add behavior to buttons using Java code.
+* Creating your own Custom Class
+* Looping through an ArrayList
+* Populating a ListView or GridView with an ArrayAdapter
 
 ## Resources used in this project
 
